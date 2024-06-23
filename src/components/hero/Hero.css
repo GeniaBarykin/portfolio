@@ -1,0 +1,91 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-background-image {
+    position:absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/background/background1.jpg');
+    background-size: cover;
+    z-index: -2;
+}
+
+.hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    min-width: 40%;
+}
+
+.hero-text-wrapper span {
+    font-size: 48px;
+}
+
+.hero-text-greeting {
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.hero-text-wrapper {
+    margin: auto;
+    padding-bottom: 12rem;
+}
+
+.hero-img-wrapper {
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 14rem;
+
+}
+
+.hero-img {
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.hero-text-proffesion {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-text-proffesion-name {
+    font-weight: bold;
+}
+
+.hero-background-line {
+    right: 5rem;
+    top: 15rem;
+    position: absolute;
+    background-color: rgba(255, 228, 196, 0.452);
+    height: 40vh;
+    width: 100vh;
+    z-index: -1;
+    -webkit-transform: skewX(5deg);
+    -moz-transform: skewX(5deg);
+    -ms-transform: skewX(5deg);
+    -o-transform: skewX(5deg);
+   
+}
+
+@media (max-width: 880px){
+    .hero-text-wrapper {
+        min-width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-text-wrapper span {
+        font-size: 22px;
+    }
+
+    .hero-img {
+        height: 10rem;
+        border-radius: 50%;
+    }
+}

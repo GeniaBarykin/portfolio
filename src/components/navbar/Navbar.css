@@ -1,0 +1,122 @@
+.nav-background {
+    background-color: bisque;
+}
+
+.nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: black 1px 1px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    transition: all 2s;
+    background-color: white;
+};
+
+
+.nav-container.active {
+    transform: translateY(0);
+}   
+  
+.nav-container.hidden {
+    visibility: hidden;
+    transition: all 1s;
+    transform: translateY(-100%);
+  }
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content ul {
+    list-style-type: none;  
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;  
+}
+
+
+
+.nav-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-menu-wrapper {
+    width: 6rem;
+}
+
+.nav-menu-item:hover {
+    size: 8rem;
+    border-radius: 5px;    
+    font-weight: bold;
+}
+
+.nav-menu-wrapper:hover{
+    transform: translateY(-2px);
+}
+
+.nav-mobile-icon {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+@media (max-width: 880px){
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-container {
+        display: flex;
+    }
+
+    .nav-mobile-icon {
+        display: inline;
+        margin: 5px;
+        height: 3rem;
+        width: 3rem;
+        grid-gap: 1rem;
+        background-image: url('../../assets/mobile.png');
+        background-size: contain;
+        margin-left: 1rem;        
+        transition: all 0.5s linear;
+    }
+    
+    .nav-mobile-icon.active {
+        transform: rotate(90deg);
+    }
+    .nav-mobile.hidden{
+        display: none
+    }   
+
+    .nav-mobile.active{
+        left: 0;
+        top: 0;
+        position: absolute;
+        height: 100vh;
+        background-color: rgba(48, 46, 43, 0.534);
+        box-shadow: black 1px 5px 5px;
+        z-index: -1;
+    }
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .nav-mobile-wrapper{
+        height: 3rem;
+        margin-right: 25px;
+    }
+}

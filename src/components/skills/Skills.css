@@ -1,0 +1,112 @@
+#skills{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+}
+
+.skills-container{      
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80vh;
+    margin-top: 100px;
+    padding: 30px;  
+    animation: fade 5s;
+    border-radius: 15px;
+    max-width: 40rem;
+}
+
+.skills-container h1{
+    font-size: 45px;
+}
+
+
+.skills-text{
+    font-size: 18px;
+    text-align: left;
+}
+
+.skills-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.skills-img{
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.skills-list li:hover{
+    height: 65px;
+}
+
+.skills-container{    
+    color: black;
+}
+.skills-background-line {    
+    position: absolute;    
+    z-index: -1;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.skills-background-line1 {
+    background-color: rgba(255, 228, 196, 0.452);
+    height: 35vh;
+    min-width: 75vh;
+    -webkit-transform: skewX(5deg);
+    -moz-transform: skewX(5deg);
+    -ms-transform: skewX(5deg);
+    -o-transform: skewX(5deg);
+}
+
+.skills-background-line2 {
+    right: 0;
+    background-color: rgba(196, 189, 182, 0.452);
+    height: 35vh;
+    width: 50%;
+    z-index: -1;
+    -webkit-transform: skewX(5deg);
+    -moz-transform: skewX(5deg);
+    -ms-transform: skewX(5deg);
+    -o-transform: skewX(5deg);
+   
+}
+
+.spinner {
+    background-color: rgba(255, 228, 196, 0.452);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 25px solid white;
+    border-top: 20px solid rgba(196, 189, 182, 0.452);
+    animation: spin 2.5s linear infinite
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@media (max-width: 880px) {
+    
+    .skills-background-line1 {
+        height: 50vh;        
+        width: 100%;
+    }
+    .skills-background-line2 {
+        width: 0;
+    }
+}

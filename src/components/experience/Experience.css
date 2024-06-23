@@ -1,0 +1,105 @@
+
+.experience-container {
+    background-color: rgba(255, 228, 196);
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+}
+
+.experience-card {
+    margin: -60px 0 0 30px;
+    background-color: white;
+    max-width: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.253) 2px 3px 1px;
+}
+
+.experience-card li {
+    text-align: start;
+}
+
+.experience-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.experience-timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 10px;
+    left:0;
+    margin-left: -3px;
+    animation: moveline 4s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.experience-body {    
+    opacity: 0;
+}
+
+.experience-body.show {
+    opacity: 0;
+    animation: movedown 1s linear forwards;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.experience-arrow {
+    position:relative;
+    top: 60px;
+    left: 0px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgba(196, 189, 182, 0.452);
+}
+
+.experience-card h5 {
+    margin: -15px -5px 0 0;
+}
+
+.experience-footer {
+    margin-top: -2rem;
+}
+
+.experience-bubble {
+    position: absolute;
+    border-radius: 50%;
+    border: solid white 15px;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(196, 189, 182, 0.452);
+}
+
+.experience-bubble.bubble-1 {
+    left: 100px;
+}
+
+.experience-bubble.bubble-2 {
+    margin-top: 250px;
+    right: 100px;
+}
+
+.experience-bubble.bubble-3 {
+    margin-top: 660px;
+    left: 150px;
+}
