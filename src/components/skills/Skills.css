@@ -64,6 +64,7 @@
     -moz-transform: skewX(5deg);
     -ms-transform: skewX(5deg);
     -o-transform: skewX(5deg);
+    transform: skewX(5deg);
 }
 
 .skills-background-line2 {
@@ -76,6 +77,7 @@
     -moz-transform: skewX(5deg);
     -ms-transform: skewX(5deg);
     -o-transform: skewX(5deg);
+    transform: skewX(5deg);
    
 }
 
