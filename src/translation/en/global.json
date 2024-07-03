@@ -1,0 +1,26 @@
+{
+    "hero": {
+        "greeting": "Hello",
+        "pre-name": "I'm",
+        "name": "Evgeny",
+        "proffesion": "And I am a",
+        "proffesion_name": "Web developer"
+    },
+    "skills": {
+        "title": "My skills",
+        "skills-text": "Hardworking and communicative. I like to learn new technologies. I am very well versed in english. I have studied software engineering at Saxion University of Applied Sciences in Netherlands. Team player, with experience working in foreign companies by Agile methodology. I like and I can solve problems. High adaptability and flexibility."
+    },
+    "contact": {
+        "title": "Get in touch",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "error": "Please, check the correctness of the entered data",
+        "processing": "Sending",
+        "success": "Send"
+    },
+    "footer": {
+        "copyright": "Evgeny Barykin"
+    }   
+}

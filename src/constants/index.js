@@ -12,7 +12,7 @@ import {
     docker,
   } from "../assets/";
 
-export const navLinks = [
+export const navLinksRu = [
     {
         id: "hero",
         title: "Главная"
@@ -30,6 +30,26 @@ export const navLinks = [
         title: "Контакт"
     }
 ]
+
+export const navLinksEn = [
+  {
+      id: "hero",
+      title: "Hero"
+  },
+  {
+      id: "skills",
+      title: "Skills"
+  },
+  {
+    id: "experience",
+    title: "Experience"
+  },
+  {
+      id: "contact",
+      title: "Contact"
+  }
+]
+
 export const skills = [
     {
         name: "HTML 5",
@@ -73,7 +93,7 @@ export const skills = [
       },
 ]
 
-export const experiences = [
+export const experiencesRu = [
     {
       title: "Стажер IT отдела",
       company_name: "АО Фармстандарт",
@@ -113,6 +133,50 @@ export const experiences = [
       points: [
         "Разработка микросервисов для обработки и передачи данных в режиме реального времени на базе Kafka.", 
         "Миграция c Apache Kafka на Confluent Kafka с подключением к MongoDB.",
+      ],
+    },
+  ];
+
+  export const experiencesEn = [
+    {
+      title: "IT intern",
+      company_name: "JSC Pharmstandart",
+      iconBg: "#383E56",
+      date: "September 2020 - February 2021",
+      points: [
+        "Automatisation using scripts in Python.",
+        "Set up and work with virtual servers Linux."
+      ],
+    },
+    {
+      title: "Fullstack developer",
+      company_name: "Irdeto",
+      iconBg: "#E6DEDD",
+      date: "February 2021 - July 2021",
+      points: [
+        "Work on fixing bugs in the system and adding new features using React and nodeJS.",
+        "Test development using CI/CD, Jest tests creation."
+      ],
+    },
+    {
+      title: "Backend developer",
+      company_name: "Pluxbox",
+      iconBg: "#383E56",
+      date: "February 2022 - July 2022",
+      points: [
+        "Web blocks creation for online constructor.",
+        "Cloud service monitoring system creation for the online service on the basis of ELK Stack.",
+        "Work with Docker containers."
+      ],
+    },
+    {
+      title: "Microservice developer",
+      company_name: "AS Watson Group",
+      iconBg: "#E6DEDD",
+      date: "February 2023 - July 2023",
+      points: [
+        "Development of microservices for real-time data processing on the basis of Kafka.", 
+        "Migration from Apache Kafka to Confluent Kafka with connection to MongoDB.",
       ],
     },
   ];

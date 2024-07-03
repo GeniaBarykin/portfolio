@@ -27,6 +27,7 @@
 
 .nav-content {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -48,10 +49,6 @@
     font-size: 20px;
 }
 
-.nav-menu-wrapper {
-    width: 6rem;
-}
-
 .nav-menu-item:hover {
     size: 8rem;
     border-radius: 5px;    
@@ -68,6 +65,17 @@
 
 .nav-mobile {
     display: none;
+}
+
+.nav-language {    
+    padding: 0px 5px 5px 5px;
+    position: absolute;    
+    right: 1vh;
+    top: 12px;
+    margin-top: auto;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
 @media (max-width: 880px){
@@ -103,6 +111,7 @@
         top: 0;
         position: absolute;
         height: 100vh;
+        min-width: 20vh;
         background-color: rgba(48, 46, 43, 0.534);
         box-shadow: black 1px 5px 5px;
         z-index: -1;

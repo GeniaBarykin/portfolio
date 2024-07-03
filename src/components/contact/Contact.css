@@ -59,6 +59,7 @@
 .contact-error {
     color: red;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
 }
 
 #contact button {

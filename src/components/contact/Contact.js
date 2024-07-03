@@ -1,8 +1,10 @@
 import React, {useState, useRef, useLayoutEffect} from 'react'
 import './Contact.css'
 import emailjs from "@emailjs/browser";
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+  const [t,i18t] = useTranslation('global');
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -95,7 +97,7 @@ function Contact() {
   return (
     <section id='contact'>
       <div className='contact-wrapper'>
-          <h3 className="contact-header">Связаться со мной</h3>
+          <h3 className="contact-header">{t("contact.title")}</h3>
 
           <form
             ref={formRef}
@@ -103,35 +105,35 @@ function Contact() {
             className='contact-form'
           >
             <label className='contact-name'>
-              <span className='contact-info'>Ваше имя</span>
+              <span className='contact-info'>{t("contact.name")}</span>
               <input
                 type='text'
                 name='name'
                 value={form.name}
                 onChange={handleChange}
-                placeholder="Ваше имя"
+                placeholder={t("contact.name")}
                 className='contact-name-input'
               />
             </label>
             <label className='contact-email'>
-              <span className='contact-info'>Ваш email {error ? <div className="contact-error">введен неверно</div> : <div></div>}</span>
+              <span className='contact-info'>{t("contact.email")} {error ? <div className="contact-error">{t("contact.error")}</div> : <div></div>}</span>
               <input
                 type='email'
                 name='email'
                 value={form.email}
                 onChange={handleChange}
-                placeholder="Ваш еmail"
+                placeholder={t("contact.email")} 
                 className='contact-email-input'
               />
             </label>
             <label className='contact-message'>
-              <span className='contact-info'>Сообщение</span>
+              <span className='contact-info'>{t("contact.message")}</span>
               <textarea
                 rows={7}
                 name='message'
                 value={form.message}
                 onChange={handleChange}
-                placeholder='Ваше сообщение'
+                placeholder={t("contact.message")}
                 className='contact-message-input'
               />
             </label>
@@ -141,7 +143,7 @@ function Contact() {
               className={enable? "contact-form-subbmit active" : "contact-form-subbmit"}
               disabled={!enable}
             >
-              {loading ? "Отсылаю..." : "Отослать"}
+              {loading ? t("contact.processing") : t("contact.send")}
             </button>
           </form>
         </div>

@@ -1,6 +1,7 @@
 import React, {useLayoutEffect} from 'react'
-import {experiences} from '../../constants'
+import {experiencesEn, experiencesRu} from '../../constants'
 import './Experience.css'
+import { useSelector } from 'react-redux'
 
 
 
@@ -32,7 +33,7 @@ const ExperienceCard = ({experience}) => (
 )
 
 const Experience = () => {
-  
+  const language = useSelector((state) => state.language.value);
   const intersectionCallback = (entries) => {
     for (const entry of entries) { 
       if (entry.isIntersecting) { // This is true when the element is in view.
@@ -64,7 +65,7 @@ const Experience = () => {
     <div className='experience-bubble bubble-3'></div>
     <div className='experience-container'>    
       <div className='experience-timeline' >        
-          {experiences.map((experience, key) => (
+          {(language === "ru" ? experiencesRu : experiencesEn ).map((experience, key) => (
                 <ExperienceCard
                 key={key} experience= {experience} />
               ))}
