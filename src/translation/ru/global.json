@@ -1,7 +1,7 @@
 {
     "hero": {
         "greeting": "Привет",
-        "pre-name": "Меня зовут",
+        "pre-name": "Меня зовут ",
         "name": "Евгений",
         "proffesion": "И я",
         "proffesion_name": "Web developer"

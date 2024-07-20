@@ -48,14 +48,16 @@
     color: black;
     font-size: 20px;
 }
-
+.nav-menu-wrapper {
+    width: 6rem;
+}
 .nav-menu-item:hover {
     size: 8rem;
     border-radius: 5px;    
     font-weight: bold;
 }
 
-.nav-menu-wrapper:hover{
+.nav-menu-item:hover{
     transform: translateY(-2px);
 }
 

@@ -76,3 +76,11 @@
     box-shadow: black 2px 2px 2px;
     border: solid black 2px;
 }
+
+::-webkit-input-placeholder {
+    padding-left: 4px;
+}
+
+.contact-email{
+    padding: 8px;
+}
